@@ -10,10 +10,10 @@ import Foundation
 // BaseballGame.swift 파일 생성
 class BaseballGame2 {
     private var answer: [Int] = []
-
+    
     func start() {
         answer = makeAnswer()
-
+        
         while true {
             print("숫자를 입력하세요")
             guard let input = readLine(), input.count == 3 else { // 입력값이 3자리가 아닐 경우
@@ -25,14 +25,14 @@ class BaseballGame2 {
                 print("세 자리 숫자를 입력하세요.")
                 continue
             }
-
+            
             let guess = input.compactMap { Int(String($0)) }
             // 입력값에 0이 포함된 경우
             if guess.contains(0) {
                 print("0은 사용할 수 없습니다. 다시 입력하세요.")
                 continue
             }
-
+            
             if guess == answer {
                 print("정답입니다.")
                 break
@@ -43,13 +43,10 @@ class BaseballGame2 {
                 } else {
                     print("\(strikes)스트라이크 \(balls)볼")
                 }
-                
             }
-            
-            
         }
     }
-
+    
     private func makeAnswer() -> [Int] {
         var randomNumber: [Int]
         repeat {
@@ -65,14 +62,14 @@ class BaseballGame2 {
             }
             randomNumber = [hundreds, tens, units]
         } while Set(randomNumber).count < 3
-        print(randomNumber)
+        //        print(randomNumber) // 값 확인용
         return randomNumber
     }
-
+    
     private func checkGuess(_ guess: [Int]) -> (Int, Int) {
         var strikes = 0
         var balls = 0
-
+        
         for (index, digit) in guess.enumerated() {
             if digit == answer[index] {
                 strikes += 1

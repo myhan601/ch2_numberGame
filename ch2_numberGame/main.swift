@@ -13,13 +13,12 @@ print("환영합니다! 원하시는 번호를 입력해주세요")
 print("1. 게임 시작하기  2. 게임 기록 보기   3. 종료하기")
 let menuInput = Int(readLine()!)
 
-if menuInput == 1 {
+switch menuInput {
+case 1:
     print("< 게임을 시작합니다 >")
     game.start()
-} else if menuInput == 2 {
+case 2:
     print("< 게임 기록 보기 >")
+default:
+    print("올바른 숫자를 입력해주세요!")
 }
- // BaseballGame 인스턴스를 만들고 start 함수를 구현하기
-
-
-
