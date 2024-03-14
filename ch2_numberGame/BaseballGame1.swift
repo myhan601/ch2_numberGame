@@ -8,16 +8,16 @@
 import Foundation
 
 // BaseballGame.swift 파일 생성
-class BaseballGame{
+class BaseballGame1{
     func start() {
         let answer = makeAnswer() // 정답을 만드는 함수
         
-        
-        
         while true {
-            let input = Int(readLine()!) // 사용자 입력받기
+            print("숫자를 입력하세요")
+            let input = readLine()!// 사용자 입력받기
+            let number = Int(input)
             
-            if input == answer {
+            if Int(input) == answer {
                 print("정답입니다")
                 break
             } else {

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AB7F5CA72BA13E67004FFA96 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7F5CA62BA13E67004FFA96 /* main.swift */; };
 		AB7F5CAE2BA16E55004FFA96 /* BaseballGame1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7F5CAD2BA16E55004FFA96 /* BaseballGame1.swift */; };
+		AB7F5CB02BA27DF2004FFA96 /* BaseballGame2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7F5CAF2BA27DF2004FFA96 /* BaseballGame2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,7 @@
 		AB7F5CA32BA13E67004FFA96 /* ch2_numberGame */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ch2_numberGame; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB7F5CA62BA13E67004FFA96 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		AB7F5CAD2BA16E55004FFA96 /* BaseballGame1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseballGame1.swift; sourceTree = "<group>"; };
+		AB7F5CAF2BA27DF2004FFA96 /* BaseballGame2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseballGame2.swift; path = ../../../../../Documents/BaseballGame2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				AB7F5CA62BA13E67004FFA96 /* main.swift */,
 				AB7F5CAD2BA16E55004FFA96 /* BaseballGame1.swift */,
+				AB7F5CAF2BA27DF2004FFA96 /* BaseballGame2.swift */,
 			);
 			path = ch2_numberGame;
 			sourceTree = "<group>";
@@ -125,6 +128,7 @@
 			files = (
 				AB7F5CA72BA13E67004FFA96 /* main.swift in Sources */,
 				AB7F5CAE2BA16E55004FFA96 /* BaseballGame1.swift in Sources */,
+				AB7F5CB02BA27DF2004FFA96 /* BaseballGame2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
