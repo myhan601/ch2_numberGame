@@ -16,6 +16,8 @@ let menuInput = Int(readLine()!)
 if menuInput == 1 {
     print("< 게임을 시작합니다 >")
     game.start()
+} else if menuInput == 2 {
+    print("< 게임 기록 보기 >")
 }
  // BaseballGame 인스턴스를 만들고 start 함수를 구현하기
 
