@@ -10,6 +10,7 @@ import Foundation
 // BaseballGame.swift 파일 생성
 class BaseballGame2 {
     private var answer: [Int] = []
+    public var tryNum = 0
     
     func start() {
         answer = makeAnswer()
@@ -28,10 +29,10 @@ class BaseballGame2 {
             
             let guess = input.compactMap { Int(String($0)) }
             // 입력값에 0이 포함된 경우
-            if guess.contains(0) {
-                print("0은 사용할 수 없습니다. 다시 입력하세요.")
-                continue
-            }
+//            if guess.contains(0) {
+//                print("0은 사용할 수 없습니다. 다시 입력하세요.")
+//                continue
+//            }
             
             if guess == answer {
                 print("정답입니다.")
@@ -40,8 +41,10 @@ class BaseballGame2 {
                 let (strikes, balls) = checkGuess(guess)
                 if strikes == 0 && balls == 0 {
                     print("Nothing")
+                    tryNum += 1
                 } else {
                     print("\(strikes)스트라이크 \(balls)볼")
+                    tryNum += 1
                 }
             }
         }
@@ -62,7 +65,7 @@ class BaseballGame2 {
             }
             randomNumber = [hundreds, tens, units]
         } while Set(randomNumber).count < 3
-        //        print(randomNumber) // 값 확인용
+        print(randomNumber) // 값 확인용
         return randomNumber
     }
     
